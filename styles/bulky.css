@@ -123,7 +123,7 @@ h2 {
   transform: scale(1.1);
 }
 
-.bio p {
+.bio div {
   background: var(--accent-color-light);
   border-radius: 1.5rem;
   box-shadow: 0 2px 8px rgba(108, 76, 255, 0.08);
@@ -131,6 +131,14 @@ h2 {
   border-width: 1.5px 1.5px 4.5px 4.5px;
   padding: 2rem 1.5rem;
   margin-bottom: 2rem;
+}
+
+#bio-text {
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border-color);
+  background: var(--accent-color-light);
+  box-shadow: 0 2px 8px rgba(108, 76, 255, 0.08);
 }
 
 .blog-post {

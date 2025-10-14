@@ -105,7 +105,7 @@ h1 {
     border-color: #cbd5e0;
 }
 
-.bio p {
+.bio div {
     max-width: 600px;
     margin: 1rem auto 2rem;
     padding: 1.5rem;
@@ -114,6 +114,15 @@ h1 {
     border: 1px solid #e2e8f0;
     color: #4a5568;
     line-height: 1.7;
+}
+
+#bio-text {
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    background: white;
+    max-width: 600px;
+    margin: 1rem auto 2rem;
 }
 
 .blog-section {

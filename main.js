@@ -86,7 +86,17 @@ async function initializeContent() {
     // Set profile information
     document.getElementById('profile-name').textContent = config.profile.name;
     document.getElementById('profile-tagline').textContent = config.profile.tagline;
-    document.getElementById('bio-text').textContent = config.profile.bio;
+    // Handle bio text with support for both array (new) and string (backward compatible)
+    const bioElement = document.getElementById('bio-text');
+    const bioData = config.profile.bio;
+    
+    if (Array.isArray(bioData)) {
+      bioElement.innerHTML = bioData.map(p => `<p>${p}</p>`).join('');
+    } else {
+      // Fallback for old string format
+      const formattedBio = bioData.replace(/\\n/g, '<br>').replace(/\n/g, '<br>');
+      bioElement.innerHTML = formattedBio;
+    }
 
     // Generate social icons
     const socialIcons = document.querySelector('.social-icons');

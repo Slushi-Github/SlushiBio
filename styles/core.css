@@ -99,6 +99,16 @@ h2 {
     border-radius: 12px;
 }
 
+#bio-text {
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+#bio-text p {
+    color: var(--text-color);
+    margin-bottom: 12px;
+  }
+
 .blog-post {
     padding: 1.5rem;
     border-radius: 12px;

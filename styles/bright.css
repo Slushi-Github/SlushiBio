@@ -69,11 +69,19 @@ h1 {
     color: var(--button-text-color);
 }
 
-.bio p {
+.bio div {
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     border: 2px solid #e8f0fe;
     padding: 2rem;
+}
+
+#bio-text {
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #e8f0fe;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .blog-section h2 {
