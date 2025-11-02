@@ -1,19 +1,16 @@
 // Theme selection and dynamic loading
 (async function() {
-  const availableThemes = ['bulky', 'kubrik', 'bright', 'dark', 'minimal'];
-  const params = new URLSearchParams(window.location.search);
-  let theme = params.get('theme');
+  const availableThemes = ['bulky', 'kubrik', 'bright', 'dark', 'minimal', 'slushi'];
+  let theme = null
   
-  // If no theme in URL, try to get it from config.json
-  if (!theme) {
-    try {
-      const response = await fetch('config.json');
-      const config = await response.json();
-      theme = config.theme;
-    } catch (error) {
-      console.error('Error loading config.json:', error);
-    }
+  try {
+    const response = await fetch('config.json');
+    const config = await response.json();
+    theme = config.theme;
+  } catch (error) {
+    console.error('Error loading config.json:', error);
   }
+  
   
   // Normalize and validate
   if (!theme || !availableThemes.includes(theme)) {
@@ -44,27 +41,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('config.json');
     const config = await response.json();
     const profileImage = document.getElementById('gravatar-image');
-    if (config.profile && config.profile.gravatarEmail) {
-      const cleanEmail = config.profile.gravatarEmail.trim().toLowerCase();
-      const gravatarHash = CryptoJS.SHA256(cleanEmail);
-      profileImage.src = `https://www.gravatar.com/avatar/${gravatarHash}?s=200`;
-      if (config.gravatarHovercard) {
-        profileImage.classList.add('hovercard');
-        // Dynamically load the hovercards script and initialize
-        const script = document.createElement('script');
-        script.src = 'https://www.gravatar.com/js/hovercards/hovercards.min.js';
-        script.onload = function() {
-          if (window.Gravatar && typeof Gravatar.init === 'function') {
-            Gravatar.init();
-          }
-        };
-        document.head.appendChild(script);
-      } else {
-        profileImage.classList.remove('hovercard');
-      }
+    if (config.profile && config.profile.githubUserName) {
+      const githubUserNameLower = config.profile.githubUserName.toLowerCase();
+      profileImage.src = `https://github.com/${githubUserNameLower}.png`;
     }
   } catch (error) {
-    console.error('Error setting Gravatar image:', error);
+    console.error('Error setting profile image:', error);
   }
 });
 

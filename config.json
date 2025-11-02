@@ -1,54 +1,42 @@
 {
   "profile": {
-    "name": "Matt Cromwell",
-    "tagline": "Helping WordPress professionals build better businesses",
-    "gravatarEmail": "matt@wpproducttalk.com",
+    "name": "Slushi",
+    "tagline": "Just a programmer doing silly things.",
+    "githubUserName": "Slushi-Github",
     "bio": [
-      "I help product businesses turn customer insight into better experiences that keep people renewing year after year.",
-      "I co-founded GiveWP, growing it into the leading online donations platform for WordPress. After its acquisition by StellarWP, I became Senior Director of Customer Experience, scaling those same data-driven systems across flagship brands like LearnDash, KadenceWP, and The Events Calendar.",
-      "Beyond my formal roles, I co-host WP Product Talk, a weekly show where WordPress founders share what works (and what doesn't) in growing sustainable products. I've also spoken at WordCamps and CloudFest EU, helping teams connect customer experience with product strategy so every decision moves the business forward.",
-      "Over a decade in customer experience and product growth, my focus hasn't changed: connect what customers feel with how teams build — and turn that alignment into meaningful, measurable growth."
+      "hello! I'm Slushi, or rather Andrés, a guy from Latin America 🇻🇪, who is still learning to program and improve at it.",
+      "I have been a programmer, mainly using Haxe, for the last four years, creating various things and also trying to help anyone I can.",
+      "I am currently focused on bringing Haxe to video game consoles in a free form (or homebrew), starting with the Nintendo Wii U and currently with the Nintendo Switch.",
+      "But my priority is to deliver projects that I like and that others might like or even find helpful. I just want to do silly things in the world of programming."
     ]
   },
   "social": {
-    "linkedin": "https://linkedin.com/in/mattcromwell",
-    "x": "https://x.com/learnwithmattc",
-    "wordpress": "https://profiles.wordpress.org/webdevmattcrom/",
-    "youtube": "https://youtube.com/@wpproducttalk",
-    "github": "https://github.com/mathetos/",
-    "bluesky": "https://bsky.app/profile/mattcromwell.bsky.social",
-    "email": "https://mattcromwell.com/contact"
+    "youtube": "https://www.youtube.com/@andres_venezuela2007",
+    "github": "https://github.com/Slushi-Github",
+    "bluesky": "https://bsky.app/profile/andresleafy.bsky.social"
   },
   "links": [
     {
-      "title": "WP Product Talk Podcast",
-      "url": "https://wpproducttalk.com"
+      "title": "HaxeNXCompiler - My Haxe \"compiler\" for the Nintendo Switch",
+      "url": "https://github.com/Slushi-Github/HaxeNXCompiler"
     },
     {
-      "title": "StellarWP",
-      "url": "https://stellarwp.com"
+      "title": "Leafy Engine - My 2D framework engine for the Wii U made in Haxe",
+      "url": "https://github.com/Slushi-Github/leafyEngine"
     },
     {
-      "title": "GiveWP",
-      "url": "https://givewp.com"
+      "title": "HxCompileU - My Haxe \"compiler\" for the Wii U",
+      "url": "https://github.com/Slushi-Github/hxCompileU"
     },
     {
-      "title": "My Writing",
-      "url": "https://mattcromwell.com"
+      "title": "Slushi Engine - My Friday Night Funkin' custom engine",
+      "url": "https://github.com/Slushi-Github/Slushi-Engine"
     }
   ],
-  "blog": {
-    "rssFeed": "https://www.mattcromwell.com/feed/",
-    "wordCount": 75
-  },
+
   "support": {
-    "buttonText": "Buy Me a Coffee ☕️",
-    "url": "https://www.buymeacoffee.com/mattcromwell"
+    "buttonText": "Support me on Ko-fi ❤️",
+    "url": "https://ko-fi.com/slushikofi"
   },
-  "contact": {
-    "buttonText": "Contact Me ✉️",
-    "url": "https://mattcromwell.com/contact"
-  },
-  "theme": "dark",
-  "gravatarHovercard": true
+  "theme": "slushi"
 } 
