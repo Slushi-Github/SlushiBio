@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Personal bio site for Slushi" />
   <title id="page-title">Loading...</title>
 
   <link rel="icon" href="./icon.png" type="image/png">
   <meta content="Personal bio site for Slushi" property="og:title" />
-  <meta content="" property="og:description" />
+  <meta content="My personal bio site about me! :3" property="og:description" />
   <meta content="https://slushi-github.github.io/SlushiBio" property="og:url" />
+  <meta content="https://slushi-github.github.io/SlushiBio/dsPreview.png" property="og:image" />
   <meta content="#8FD9D1" data-react-helmet="true" name="theme-color" />
 
   <style>
@@ -19,7 +21,7 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     .bio-container {
       max-width: 680px;
       margin: 3rem auto;
@@ -29,19 +31,19 @@
       gap: 2rem;
       min-height: calc(100vh - 6rem);
     }
-    
+
     .profile-header {
       text-align: center;
       padding: 1rem;
     }
-    
+
     header #gravatar-image {
       width: 128px;
       height: 128px;
       border-radius: 50%;
       margin-bottom: 1rem;
     }
-    
+
     .social-icons {
       display: flex;
       flex-wrap: wrap;
@@ -49,14 +51,14 @@
       gap: 1rem;
       margin-top: 1rem;
     }
-    
+
     .links-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       justify-content: center;
     }
-    
+
     .link-button {
       flex: 1 1 calc(33.333% - 1rem);
       min-width: 200px;
@@ -64,7 +66,7 @@
       box-sizing: border-box;
       text-align: center;
     }
-    
+
     @media (max-width: 768px) {
       .bio-container {
         max-width: calc(100vw - 3rem);
@@ -72,16 +74,16 @@
         padding: 1rem;
         min-height: calc(100vh - 3rem);
       }
-      
+
       .profile-image {
         width: 96px;
         height: 96px;
       }
-      
+
       .links-grid {
         flex-direction: column;
       }
-      
+
       .link-button {
         flex: 1 1 100%;
         min-width: 0;
@@ -95,6 +97,7 @@
   <script src="main.js" defer></script>
 
 </head>
+
 <body>
   <main class="bio-container" role="main">
     <header class="profile-header" role="banner">
@@ -122,28 +125,30 @@
         <a id="support-button" href="#" class="support-button" aria-label="Support button"></a>
       </div>
       <div class="credits">
-        <p><a href="https://github.com/Slushi-Github/SlushiBio">Modified by Slushi, based on "Connect" project (bio site) by Matt Cromwell</a></p>
-      </p>
+        <p><a href="https://github.com/Slushi-Github/SlushiBio">Modified by Slushi, based on "Connect" project (bio
+            site) by Matt Cromwell</a></p>
+        </p>
       </div>
     </footer>
   </main>
   <script>
-  (function() {
-    function init() {
-      if (typeof Gravatar === 'undefined') {
-        return;
+    (function () {
+      function init() {
+        if (typeof Gravatar === 'undefined') {
+          return;
+        }
+        if (typeof Gravatar.init !== 'function') {
+          return;
+        }
+        Gravatar.init('body');
       }
-      if (typeof Gravatar.init !== 'function') {
-        return;
+      if (document.readyState !== 'loading') {
+        init();
+      } else {
+        document.addEventListener('DOMContentLoaded', init);
       }
-      Gravatar.init('body');
-    }
-    if (document.readyState !== 'loading') {
-      init();
-    } else {
-      document.addEventListener('DOMContentLoaded', init);
-    }
-  })();
+    })();
   </script>
 </body>
+
 </html>
