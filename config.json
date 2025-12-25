@@ -16,6 +16,10 @@
     "bluesky": "https://bsky.app/profile/andresleafy.bsky.social"
   },
   "links": [
+     {
+      "title": "Vupx Engine - My 2D/3D framework engine for the Nintendo Switch made in Haxe",
+      "url": "https://slushi-github.github.io/Vupx-Engine/"
+    },
     {
       "title": "HaxeNXCompiler - My Haxe \"compiler\" for the Nintendo Switch",
       "url": "https://github.com/Slushi-Github/HaxeNXCompiler"
