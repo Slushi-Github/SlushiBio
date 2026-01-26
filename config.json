@@ -16,11 +16,11 @@
     "bluesky": "https://bsky.app/profile/andresleafy.bsky.social"
   },
   "links": [
-     {
+    {
       "title": "Lime-NX - My Lime fork for use with Lime projects (OpenFL, HaxeFlixel, etc.) on the Nintendo Switch",
-      "url": "https://slushi-github.github.io/Vupx-Engine/"
-     },
-     {
+      "url": "https://github.com/Slushi-Github/lime-nx"
+    },
+    {
       "title": "Vupx Engine - My 2D/3D framework engine for the Nintendo Switch made in Haxe",
       "url": "https://slushi-github.github.io/Vupx-Engine/"
     },
@@ -35,6 +35,10 @@
     {
       "title": "HxCompileU - My Haxe \"compiler\" for the Wii U",
       "url": "https://github.com/Slushi-Github/hxCompileU"
+    },
+    {
+      "title": "Slushi Engine - My Friday Night Funkin' custom engine",
+      "url": "https://github.com/Slushi-Github/Slushi-Engine"
     }
   ],
 
@@ -43,4 +47,4 @@
     "url": "https://ko-fi.com/slushikofi"
   },
   "theme": "slushi"
-} 
+}
