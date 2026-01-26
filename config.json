@@ -17,6 +17,10 @@
   },
   "links": [
      {
+      "title": "Lime-NX - My Lime fork for use with Lime projects (OpenFL, HaxeFlixel, etc.) on the Nintendo Switch",
+      "url": "https://slushi-github.github.io/Vupx-Engine/"
+     },
+     {
       "title": "Vupx Engine - My 2D/3D framework engine for the Nintendo Switch made in Haxe",
       "url": "https://slushi-github.github.io/Vupx-Engine/"
     },
